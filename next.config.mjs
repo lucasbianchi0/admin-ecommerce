@@ -2,7 +2,7 @@
 const nextConfig = {
     images: {
         domains: ['docs.distecna.com'], 
-      },
+    },
     eslint:{
       ignoreDuringBuilds: true,
     }
