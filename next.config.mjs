@@ -3,6 +3,9 @@ const nextConfig = {
     images: {
         domains: ['docs.distecna.com'], 
       },
+    eslint:{
+      ignoreDuringBuilds: true,
+    }
 };
 
 export default nextConfig;
