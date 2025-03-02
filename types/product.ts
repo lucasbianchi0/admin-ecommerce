@@ -21,8 +21,9 @@ export interface Product {
   description?: string
   fullDescription?: string
   attributes?: ProductAttribute[]
-  images?: ProductImage[]
-  stock?: number
+  // images?: ProductImage[]
+  images?: String
+  stock: number
   currency?: string
   price?: number
   iva?: number

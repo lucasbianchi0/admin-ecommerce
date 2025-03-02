@@ -53,7 +53,7 @@ export function ProductTable({ searchQuery }: ProductTableProps) {
         product.code?.toLowerCase().includes(searchQuery.toLowerCase()) ||
         product.name?.toLowerCase().includes(searchQuery.toLowerCase()),
     )
-    .filter((product) => (filterStock ? product.stock > 0 : true)) // Aplica filtro solo si está activado
+    .filter((product) => (filterStock ? product.stock > 0 : true)) 
 
   if (loading) {
     return <div className="flex justify-center p-6">Cargando productos...</div>
@@ -65,7 +65,6 @@ export function ProductTable({ searchQuery }: ProductTableProps) {
 
   return (
     <div className="rounded-md border p-4">
-      {/* Toggle para filtrar por stock */}
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-lg font-semibold">Lista de productos</h2>
         <div className="flex items-center gap-2">
