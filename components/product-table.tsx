@@ -89,7 +89,7 @@ export function ProductTable({ searchQuery }: ProductTableProps) {
         <TableBody>
           {filteredProducts.length > 0 ? (
             filteredProducts.map((product) => (
-              <TableRow key={product.id}>
+              <TableRow key={product.code}>
                 <TableCell>{product.sku || "-"}</TableCell>
                 <TableCell>{product.code || "-"}</TableCell>
                 <TableCell>{product.stock || 0}</TableCell>
